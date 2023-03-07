@@ -1,0 +1,79 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Montserrat', sans-serif;
+}
+
+body {
+  background-color: rgb(31, 31, 31);
+}
+
+.calc-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  min-height: 100vh;
+  max-width: 500px;
+  flex-wrap: wrap;
+  margin: auto;
+}
+
+.output-container {
+  background-color: rgb(67, 67, 67);
+  color: #eee;
+  width: 100%;
+  height: 200px;
+  padding: 1.5rem;
+  margin: 5px 5px;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: space-around;
+  overflow: hidden;
+}
+.previous-operend {
+  display: flex;
+  font-size: 1.5rem;
+}
+
+.current-operend {
+  display: flex;
+  font-size: 2.5rem;
+}
+
+.buttons-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+  width: 100%;
+  gap: 5px
+}
+
+.buttons-container button {
+  padding: 1.5rem;
+  font-size: 2rem;
+  border: none;
+  border: 2px solid rgb(240, 240, 240) ;
+  background-color: rgb(240, 240, 240);
+  color: rgb(50, 50, 50);
+  transition: 300ms ease;
+  border-radius: 8px;
+}
+
+.buttons-container button:hover {
+  cursor: pointer;
+  border: 2px solid black;
+  background-color: rgb(121, 121, 121);
+  color: rgb(240, 240, 240);
+}
+
+.span-two {
+  grid-column: span 2;
+}
+
+.operator { 
+  background-color: rgb(217, 217, 217);
+}
